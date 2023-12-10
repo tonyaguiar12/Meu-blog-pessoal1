@@ -1,11 +1,28 @@
-body {
-    font-size: 16px;
-    background-color: red;
+.menu-icon {
+    display: none;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 600px) {
-    body {
-        font-size: 14px;
-        background-color: red;
+    .menu-icon {
+        display: block;
+    }
+
+    #nav-links {
+        display: none;
+        text-align: center;
+    }
+
+    #nav-links.show {
+        display: block;
+    }
+
+    #nav-links ul {
+        padding: 0;
+    }
+
+    #nav-links li {
+        display: block;
+        margin-bottom: 10px;
     }
 }

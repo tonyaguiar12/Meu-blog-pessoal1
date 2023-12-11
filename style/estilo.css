@@ -3,6 +3,20 @@
     margin: 0px;
     padding: 0PX;
 }
+/* Adicione estilos anteriores aqui... */
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(10deg);
+    }
+}
+
+.animated {
+    animation: rotate 1s linear infinite; /* Duração, função de temporização e iteração infinita */
+}
 
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -11,6 +25,7 @@ body{
 }
 /* Cabeçalho*/
 header{
+    width: 94%;
     background-color: #f9e4b7;
     text-align: center;
     padding: 20px;
@@ -25,7 +40,7 @@ header > h1{
 
 nav{
     font-size: 0.8em;
-    text-align: left;
+    text-align: right;
     margin-left: 0px;
     padding-left: 0px;
   }
@@ -45,4 +60,42 @@ nav ul > a:hover{
     background-color: black;
     color: #fdd682;
     border-radius: 5px;
+}
+
+/*Main*/
+
+section > img{
+    background-color: #ddd;
+    border-radius: 50%;
+    height: 200px;
+    object-fit: cover;
+    width: 200px; 
+}
+#sobre{
+    max-width: 600px;
+    margin: 20px auto;
+    margin-top: 10px;
+    width: 96%;
+    padding: 10px;
+    background-color: #ece2cc
+   
+}
+#sobre > p{
+    margin-bottom: 15px;
+    
+}
+
+
+
+
+
+/*Final*/
+footer {
+    background-color:  #f9e4b7;
+    color: #535353;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 97%;
 }

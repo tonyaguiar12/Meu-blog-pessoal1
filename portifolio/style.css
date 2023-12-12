@@ -1,0 +1,130 @@
+
+/*Estilo geral*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); /*Google Fontes*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+    color: white;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-image: linear-gradient(to right, #ebc678, #e6561d);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .0s;
+}
+
+/*Estilo do cabeçahlho */
+.flex{
+    display: flex;
+}
+header{
+    padding: 40px 4%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .links{
+    color: rgb(194, 188, 188);
+    text-decoration: none;
+    transition: .2;
+}
+
+header .links :hover{
+    background-image: linear-gradient(to right, #ebc678, #e6561d);
+    border-radius: 30px;
+    color: black;
+    transform: scale(1.05);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.btn-contato button:hover{
+    box-shadow: 0px 0px 8px #f9e4b7b2;
+    transform: scale(1.05);
+    color: wheat;
+}
+
+/*Estilo do topo do site*/
+
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1{
+    font-size:42px;
+    color: #fff;
+    line-height: 40px;
+}
+
+.topo-do-site h1 span{
+    color: rgb(95, 42, 95);
+    font-size: 48px;
+}
+
+.topo-do-site .txt-topo-site p{
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+
+
+
+
+
+
+ main img{
+    
+    border-radius: 50%;
+    height: 300px;
+    object-fit: cover;
+    width: 300px; 
+}

@@ -42,6 +42,12 @@ h2.titulo span{
     border-radius: 30px;
     color: rgb(145, 64, 145);;
 }
+
+button:hover{
+    box-shadow: 0px 0px 8px #f9e4b7b2;
+    transform: scale(1.05);
+    color: wheat;
+}
 /*Estilo do cabeçahlho */
 .flex{
     display: flex;
@@ -79,11 +85,7 @@ header nav ul li{
     padding: 0 40px;
 }
 
-.btn-contato button:hover{
-    box-shadow: 0px 0px 8px #f9e4b7b2;
-    transform: scale(1.05);
-    color: wheat;
-}
+
 
 /*Estilo do topo do site*/
 
@@ -157,12 +159,58 @@ section.especialidades .flex{
     margin: 15px 0;
 }
 
-
-
- main img{
+/*EStilo Imagem*/
+ main .img-topo-site img{
     
     border-radius: 50%;
     height: 300px;
     object-fit: cover;
     width: 300px; 
 }
+
+main .img-sobre img{
+    
+    border-radius: 20px;
+    object-fit: cover;
+    
+}
+
+/*EStilo Sobre*/
+
+section.sobre{
+    margin-left: 30px;
+    padding: 70px 4%;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 35px;
+    line-height: 40px;
+    margin-bottom: 25px;
+}
+
+.sobre .txt-sobre h2 span{
+    display: block;
+    color: #ebc678;
+}
+
+.sobre .txt-sobre p{
+    margin: 15px 0px;
+    text-align: justify;
+}
+
+.sobre .txt-sobre .btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-image: linear-gradient(to right,#e6561d, #ebc678);
+    font-size: 21px;
+    margin: 0 6.5px;
+    transition: .1s;
+}
+

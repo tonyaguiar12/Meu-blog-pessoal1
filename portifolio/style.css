@@ -203,7 +203,7 @@ section.sobre .flex{
     text-align: justify;
 }
 
-.sobre .txt-sobre .btn-social button{
+.btn-social button{
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -314,3 +314,120 @@ form .btn-enviar input{
     transition: .1s;
 
 }
+
+/* Estilos de Ropadé*/
+
+footer{
+    padding: 30px 4%;
+    box-shadow: 0 0 40px 10px rgba(128, 128, 128, 0.293);
+
+}
+
+footer .flex{
+    justify-content: space-between; /*mandar os meus logos para direita*/
+}
+
+footer .line-footer{
+    padding: 10px 0;
+    padding-bottom: 0px;
+   
+}
+footer .btn-social{
+    margin-top: 40px;
+}
+
+footer .line-footer p i{
+    color: #ebc678;
+    font-size: 23px;
+}
+
+footer .line-footer p a {
+    text-decoration: none;
+    color: white;
+}
+
+@media screen and (max-width: 1150px){
+
+    /*Classes gerias*/
+
+    .flex{
+        flex-direction: column-reverse;
+    }
+
+    h2.titulo{
+        font-size: 31px;
+        line-height: 35px;
+    }
+
+    /*Cabeçalho*/
+    .menu-desktop, .btn-contato{
+        display: none;
+    }
+
+    /*Topo do site*/
+    
+    section.topo-do-site .flex{ 
+        gap: 40px;
+    }
+    section.topo-do-site{
+        padding: 20px 8%;
+    }
+    .topo-do-site h1{
+        font-size:29px;
+    }
+
+    /*ESpecialidade*/
+    section.especialidades{
+        padding: 40px 8%;
+    
+    }
+
+    /*Sobre*/
+    section.sobre{
+        padding: 70px 8%;
+    }
+    .sobre .txt-sobre h2{
+        font-size: 33px;
+        line-height: 36px;
+        text-align: center;
+    }
+
+    .btn-social{
+        text-align: center;
+    }
+
+    .img-sobre img{
+        width: 100%;
+    }
+
+    /*Portifolio*/
+
+    section.portifolio{
+        padding: 80px 7%;
+    }
+
+    .img-port{
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+        
+    }
+
+    section.portifolio .flex{
+   
+        gap: 60px;
+    }
+
+    /*Rodape*/
+
+    footer .flex{
+        flex-direction: column;
+    }
+
+    footer .line-footer{
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+}
+    
